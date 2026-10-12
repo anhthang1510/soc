@@ -1,18 +1,4 @@
-# SOC Automation – 5 công việc của Thắng
 
-Bộ bàn giao cho STT **55–59** trong ảnh phân công; tương ứng các dòng Excel **59–63** của sheet `TO-DO` trong `SOC_ToDo_PhanCong (1).xlsx`.
-
-Đã triển khai mã và kiểm thử độc lập ở mức **mock/lab**. Chưa kết nối EVE-NG, Wazuh, AI của Minh hay OPNsense của Nam; chưa có kết quả thực nghiệm phát hiện tấn công trên mạng thật. Không đổi trạng thái trong bảng phân công gốc.
-
-## 1. Đã làm những gì?
-
-| STT | Công việc | Sản phẩm | Cách nghiệm thu |
-|---|---|---|---|
-| 55 | Mock API AI | `soclab/mock_ai.py`, `POST /predict` | JSON hợp lệ trả điểm 0–1, mã sự kiện, phiên bản và chiều ý nghĩa điểm |
-| 56 | Mock API firewall | `soclab/mock_firewall.py`, `/block`, `/unblock`, `/blocks` | Thêm/xóa IP trong bảng SQLite mô phỏng; tự hết hạn; không sửa firewall thật |
-| 57 | Viết automation script | `soclab/automation.py`, `soclab/server.py` | Nhận event → gọi AI → xét chính sách → gọi mock firewall → lưu quyết định |
-| 58 | Logic threshold/risk score | `soclab/policy.py`, `config/policy.json` | Có công thức điểm, ngưỡng, điều kiện phối hợp; quyết định OBSERVE/REVIEW/BLOCK |
-| 59 | Chống block nhầm IP quản trị/server | `Policy.guard()` dùng tại hai dịch vụ | Dù điểm cao, IP được bảo vệ vẫn chuyển REVIEW; gọi thẳng mock firewall cũng bị từ chối |
 
 API viết bằng thư viện chuẩn Python để chạy ngay, không phải cài thêm gói. Dịch vụ AI của Minh có thể dùng FastAPI; việc ghép nối phụ thuộc hợp đồng JSON, không phụ thuộc framework của mock.
 
