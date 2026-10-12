@@ -1,0 +1,33 @@
+test_ai_failure_no_block (test_soc.SOCtests.test_ai_failure_no_block) ... ok
+test_attack_reaches_mock_alias (test_soc.SOCtests.test_attack_reaches_mock_alias) ... ok
+test_benign_observed (test_soc.SOCtests.test_benign_observed) ... ok
+test_block_cap_and_ttl_validation (test_soc.SOCtests.test_block_cap_and_ttl_validation) ... ok
+test_concurrent_duplicate_only_one_block (test_soc.SOCtests.test_concurrent_duplicate_only_one_block) ... ok
+test_conflicting_event_id (test_soc.SOCtests.test_conflicting_event_id) ... ok
+test_core_routed_internal_is_review (test_soc.SOCtests.test_core_routed_internal_is_review) ... ok
+test_dry_run_no_side_effect (test_soc.SOCtests.test_dry_run_no_side_effect) ... ok
+test_expire_without_http_request (test_soc.SOCtests.test_expire_without_http_request) ... ok
+test_fim_does_not_block_source (test_soc.SOCtests.test_fim_does_not_block_source) ... ok
+test_firewall_id_conflict_and_replay_after_expiry (test_soc.SOCtests.test_firewall_id_conflict_and_replay_after_expiry) ... ok
+test_http_three_services_and_auth (test_soc.SOCtests.test_http_three_services_and_auth) ... ok
+test_invalid_ai_response_rejected (test_soc.SOCtests.test_invalid_ai_response_rejected) ... ok
+test_invalid_feature (test_soc.SOCtests.test_invalid_feature) ... ok
+test_invalid_ip_and_cidr (test_soc.SOCtests.test_invalid_ip_and_cidr) ... ok
+test_invalid_policy_refused (test_soc.SOCtests.test_invalid_policy_refused) ... ok
+test_missing_src_not_replaced_by_agent_ip (test_soc.SOCtests.test_missing_src_not_replaced_by_agent_ip) ... ok
+test_pending_policy_change (test_soc.SOCtests.test_pending_policy_change) ... ok
+test_protected_and_special_addresses (test_soc.SOCtests.test_protected_and_special_addresses) ... ok
+test_replay_does_not_extend_ttl (test_soc.SOCtests.test_replay_does_not_extend_ttl) ... ok
+test_restart_persists_replay_and_blocks (test_soc.SOCtests.test_restart_persists_replay_and_blocks) ... ok
+test_stale_and_future_events (test_soc.SOCtests.test_stale_and_future_events) ... ok
+test_thresholds_and_minimum_evidence (test_soc.SOCtests.test_thresholds_and_minimum_evidence) ... ok
+test_timeout_after_firewall_commits_retries_same_request (test_soc.SOCtests.test_timeout_after_firewall_commits_retries_same_request) ... ok
+test_unblock_is_idempotent (test_soc.SOCtests.test_unblock_is_idempotent) ... ok
+test_wrong_firewall_ack_never_marked_applied (test_soc.SOCtests.test_wrong_firewall_ack_never_marked_applied) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.101s
+
+OK
+
+EXIT_CODE=0

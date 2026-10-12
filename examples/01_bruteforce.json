@@ -1,0 +1,1 @@
+{"event_id":"demo-attack-01","timestamp":"2026-10-12T06:00:00Z","source":"test","src_ip":"198.51.100.23","dst_ip":"10.10.20.10","severity":12,"event_type":"brute_force","features":{"failed_logins_60s":30,"unique_dst_ports_60s":1}}

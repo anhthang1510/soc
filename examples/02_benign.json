@@ -1,0 +1,1 @@
+{"event_id":"demo-benign-01","timestamp":"2026-10-12T06:00:00Z","source":"test","src_ip":"198.51.100.24","severity":2,"event_type":"other","features":{"failed_logins_60s":0,"unique_dst_ports_60s":1}}
